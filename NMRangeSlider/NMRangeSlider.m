@@ -235,9 +235,7 @@ NSUInteger DeviceSystemMajorVersion() {
         else
         {
             
-            NSURL *bundleURL = [[NSBundle mainBundle] URLForResource:@"NMRangeSlider" withExtension:@"bundle"];
-            
-            UIImage* image = [UIImage imageNamed:@"slider-default7-trackBackground" inBundle:[NSBundle bundleWithPath:[[NSBundle mainBundle] pathForResource:@"NMRangeSlider" ofType:@"bundle"]]compatibleWithTraitCollection:nil];
+            UIImage* image = [UIImage imageNamed:@"slider-default7-trackBackground" inBundle:[NMRangeSlider class]] compatibleWithTraitCollection:nil];
             image = [image resizableImageWithCapInsets:UIEdgeInsetsMake(0.0, 2.0, 0.0, 2.0)];
             _trackBackgroundImage = image;
         }
